@@ -1,0 +1,19 @@
+[ignore]
+.*.cache.*
+
+[include]
+
+[libs]
+flow-typed/
+
+[lints]
+
+[options]
+module.name_mapper='^hocs/\(\/?.*\)$' -> '<PROJECT_ROOT>/src/hocs/\1'
+module.name_mapper='^screens/\(\/?.*\)$' -> '<PROJECT_ROOT>/src/screens/\1'
+module.name_mapper='^styles/\(\/?.*\)$' -> '<PROJECT_ROOT>/src/styles/\1'
+
+[strict]
+
+[untyped]
+.*/node_modules/**/.*
