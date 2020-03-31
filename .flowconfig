@@ -12,6 +12,9 @@ flow-typed/
 module.name_mapper='^hocs/\(\/?.*\)$' -> '<PROJECT_ROOT>/src/hocs/\1'
 module.name_mapper='^screens/\(\/?.*\)$' -> '<PROJECT_ROOT>/src/screens/\1'
 module.name_mapper='^styles/\(\/?.*\)$' -> '<PROJECT_ROOT>/src/styles/\1'
+module.name_mapper.extension='svg' -> '<PROJECT_ROOT>/SVG.js.flow'
+suppress_comment= \\(.\\|\n\\)*\\$FlowIgnore
+sharedmemory.hash_table_pow=21
 
 [strict]
 
